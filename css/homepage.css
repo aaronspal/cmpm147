@@ -1,20 +1,34 @@
-
-.image-wrapper {
-  width: 100%x;
-  padding: 0;
-  border-radius: 10px;
-  overflow: hidden;
+#mainContainer {
+    /*width: 100%;*/
+    /*height: 100vh;*/
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
 }
 
-.two-column {
-  display: flex;
-  flex-direction: row;
+#mainContainer > section:first-child {
+    height: auto; /* Override the h50 class */
+    min-height: fit-content; /* Make it only as tall as needed */
 }
 
-.two-column>*:nth-child(1) {
-  flex: 2;
+/* Make the bottom section fill remaining space */
+#mainContainer > section:last-child {
+    flex: 1; /* This will make it expand to fill remaining space */
+    min-height: 0; /* Allow it to shrink if needed */
 }
 
-.two-column>*:nth-child(2) {
-  flex: 1;
+.marginM {
+    margin-bottom: -15px;
+}
+
+.info p {
+    margin: 5px 20px;
+}
+
+#blackBar {
+    display: block;
+    width: 100%;
+    height: 40px;
+    background-color: #ff5927;
+    /*margin-top: 20px;*/
 }

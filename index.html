@@ -1,46 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<!-- This title is used for tabs and bookmarks -->
 	<title>Portfolio of My Name</title>
-
-	<!-- Use UTF character set, a good idea with any webpage -->
-  <meta charset="UTF-8" />
-	<!-- Set viewport so page remains consistently scaled w narrow devices -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<!-- Include a sitewide CSS file for consistent styling across the site -->
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="https://use.typekit.net/boy6nro.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" type="text/css" href="css/site.css">
-	<!-- Experiment-specifc CSS file for any special styling of this particular page -->
 	<link rel="stylesheet" type="text/css" href="css/homepage.css">
-	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
+	<link rel="stylesheet" type="text/css" href="css/flexgrid.css">
 	<script type="text/javascript" src="./js/experiment.js"></script>
 </head>
 <body>
-	<!-- Style this page by changing the CSS in ../css/site.css or css/experiment.css -->
-	<main id="content">
-        <h1>Portfolio of My Name</h1>
-		<section class="two-column">
-			<div class="minor-section">
-					<!-- Note that all filenames use lowercase and no spaces -->
-                    <div class="image-wrapper">
-                        <img class="cat-photo" src="./img/cute-grey-kitten.jpg">
-                    </div>
-					<h2>About Me</h2>
-					<p>Tell us about yourself. Add photos. Customize this. Go crazy.</p>
-			</div>
-            <div class="minor-section">
-                <h2>Links to Experiments</h2>
-                <ul>
-                    <li><a href="./experiment1/index.html">Experiment 1</a></li>
-                    <li><a href="./experiment2/index.html">Experiment 2</a></li>
-                    <li><a href="./experiment3/index.html">Experiment 3</a></li>
-                </ul>
-            </div>
-
+	<main id="mainContainer">
+		<section>
+			<section id="name" class="flexContainer spaceAround">
+				<h1>CMPM 147</h1>
+			</section>
+			<section id="blackBar">
+				<!--			black-->
+			</section>
+			<section class="flexContainer">
+				<section class="info w40">
+					<p>SPRING 2025</p>
+				</section>
+				<section class="info flexContainer w60 spaceBetween">
+					<p>aarondoesdesign.com</p>
+					<p>&copy; Aaron Spalding</p>
+				</section>
+			</section>
 		</section>
-		<nav id="links">
-			<!-- Put links to experiments here. -->
-		</nav>
+		<section class="flexContainer">
+			<section class="padding20 flexContainer w40 borderTop column flexEnd">
+				<div class="flexContainer w100">
+					<section class="w40">
+						<h3>Experiments</h3>
+					</section>
+					<nav class="flexContainer column w60">
+						<a href="experiment1/index.html">E01: Getting Started</a>
+						<a href="experiment1/index.html">E02: Living Impressions</a>
+						<a href="experiment1/index.html">E03: Alternate Worlds</a>
+					</nav>
+				</div>
+			</section>
+			<section class="padding20 w60 borderTop borderLeft flexContainer column flexEnd">
+				<h2 class="marginM">Aaron</h2><h2>Spalding</h2>
+			</section>
+		</section>
 	</main>
 </body>
 </html>
