@@ -11,50 +11,60 @@
 	<link rel="stylesheet" type="text/css" href="../css/flexgrid.css">
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+	</script>
 	<script src="https://cdn.jsdelivr.net/npm/p5@1.9.2/lib/p5.js"></script>
 	<script type="text/javascript" src="../js/site.js" DEFER></script>
 	<script type="text/javascript" src="./js/project.js" DEFER></script>
-	<script type="text/javascript" src="./js/sketch.js" DEFER></script>
+	<script>
+		console.log("test")
+	</script>
+<!--	<script type="text/javascript" src="./js/sketch.js" DEFER></script>-->
 </head>
 <body>
 	<main id="content">
 		<section>
 			<header>
-<!--				<h1>E01</h1>-->
 				<h1><span class="bolder">EO1:</span> Getting Started</h1>
 			</header>
-			<div id="canvas-container">
-			</div>
+
+			<section id="box-container">
+				<div id="box"></div>
+				<button id="clicker">
+					Regenerate!
+				</button>
+			</section>
 			<div class="fullscreen-box padding20">
 				<h3 id="fullscreen">click here to enter fullscreen</h3>
 			</div>
 			<section class="flexContainer">
 				<section class="padding20 flexContainer w50 borderTop column spaceBetween">
-					<h3>Description</h3>
+					<h3 class="textboxHeader">Description</h3>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							A bad fantasy story generator from glitch.com that also works on my portfolio
 						</p>
 					</div>
 				</section>
 				<section class="padding20 flexContainer w50 h220px borderTop borderLeft column spaceBetween">
-					<h3>Description</h3>
+					<h3 class="textboxHeader">Technical</h3>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							A grammar is defined with simple replacement tokens. A replacer() function picks a random replacement for any token that appears in the text.
 						</p>
 					</div>
 				</section>
 			</section>
 			<section class="flexContainer">
 				<section class="padding20 flexContainer w50 borderTop column spaceBetween">
-					<h3>Reflection</h3>
+					<h3 class="textboxHeader">Reflection</h3>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							I joined this class one week late at the same time got swamped with work from my other three classes this quarter,
+							so I fell a bit more behind than I would have liked to. Other than that the setup was pretty
+							straight-forward, and I also got the chance to give this class portfolio some personality!
 						</p>
 					</div>
 				</section>
 				<a href="../index.html" class="w50">
-					<section class="padding20 flexContainer  h220px orange spaceAround alignCenter">
+					<section class="padding20 flexContainer orange spaceAround alignCenter">
 						<h1>back to home</h1>
 					</section>
 				</a>
